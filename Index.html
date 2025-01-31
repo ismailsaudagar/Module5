@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<head>
+    <script src =".\Scripts\angular.min.js"></script>
+    <script src =".\Scripts\angular-ui-router.min.js"></script>
+   
+    <script src =".\app.js"></script>
+   
+
+   <style>
+    .error{
+        color:red;
+    };
+    .success{
+ color:green;
+    }
+   </style>
+
+</head>
+<body ng-app="module5" ng-controller ="UserRegistrationController as urc">
+    <div class="tabs" width="50%" style="float: left;">
+<a ui-sref="MyInfo">MyInfo</a> &nbsp;&nbsp;
+<a ui-sref="SignUp" style="float:right">Sign Up</a>
+</div>
+<br>
+<h1>Welcome to {{urc.ModuleName}} </h1>
+<ui-view></ui-view>
+
+
+
+
+   <!-- '<div class="row">'+
+    '<div class="column">'+
+        '<h1>Welcome to My Info. Following is your detail</h1>'+
+        '<table>'+
+            '<tr>'+
+                '<td>Name</td><td>{{urc.RegisteredUser[0].FirstName +" " +urc.RegisteredUser[0].LastName}}</td>'+
+            '</tr>'+
+            '<tr>'+
+                '<td>Email</td><td>{{urc.RegisteredUser[0].Email}}</td>'+
+            '</tr>'+
+            '<tr>'+
+                '<td>Phone Number</td><td>{{urc.RegisteredUser[0].PhoneNumber}}</td>'+
+            '</tr>'+
+            
+        '</table>'+
+    
+    '</div>'+
+    '<div id="dishdetails">'+
+'<table>'+
+    '<tr><td colspan="2"><img src=""/></td></tr>'+
+    '<tr><td>Name:{{urc.returnedMenuItem[0].name}}</td></tr>'+
+    '<tr><td>Description: {{urc.returnedMenuItem[0].description}}</td></tr>'+
+    '<tr><td>ShortName:{{urc.returnedMenuItem[0].short_name}}</td></tr>'+
+'</table>'+
+    '</div>'+
+'</div>'+ -->
+
+</body>
+</html>
