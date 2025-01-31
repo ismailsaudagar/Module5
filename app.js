@@ -8,7 +8,7 @@ RoutesConfig.$inject =["$stateProvider","$urlRouterProvider"];
 function RoutesConfig($stateProvider,$urlRouterProvider)
 {
 
-    $urlRouterProvider.otherwise("/Home");
+    //$urlRouterProvider.otherwise("/Home");
 
     //Registering Routes
     $stateProvider.state("Home",
